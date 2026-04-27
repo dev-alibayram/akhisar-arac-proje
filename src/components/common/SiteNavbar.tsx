@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -46,8 +47,20 @@ export function SiteNavbar() {
   return (
     <header className="relative">
       <div className="flex items-center justify-between gap-4">
-        <a href="#anasayfa" className="text-lg font-bold text-white shrink-0">
-          Akhisar Araç Proje
+        <a
+          href="#anasayfa"
+          className="flex min-w-0 shrink-0 items-center gap-2.5 text-lg font-bold text-white"
+        >
+          <Image
+            src="/logo.png"
+            alt=""
+            width={44}
+            height={44}
+            className="h-9 w-9 shrink-0 object-contain sm:h-10 sm:w-10"
+            sizes="40px"
+            priority
+          />
+          <span className="truncate sm:whitespace-normal">Akhisar Araç Proje</span>
         </a>
 
         <nav
