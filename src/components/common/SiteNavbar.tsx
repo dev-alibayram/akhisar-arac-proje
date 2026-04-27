@@ -11,20 +11,6 @@ const links = [
   { href: "#iletisim", label: "İletişim" },
 ] as const;
 
-function WhatsAppCta({ className }: { className?: string }) {
-  return (
-    <a
-      href="#iletisim"
-      className={
-        className ??
-        "inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-400"
-      }
-    >
-      WhatsApp
-    </a>
-  );
-}
-
 export function SiteNavbar() {
   const [open, setOpen] = useState(false);
 
@@ -73,10 +59,6 @@ export function SiteNavbar() {
             </a>
           ))}
         </nav>
-
-        <div className="hidden lg:block shrink-0">
-          <WhatsAppCta />
-        </div>
 
         <button
           type="button"
@@ -134,9 +116,6 @@ export function SiteNavbar() {
                 </li>
               ))}
             </ul>
-            <div className="mt-3 border-t border-white/10 pt-3">
-              <WhatsAppCta className="flex w-full items-center justify-center rounded-lg bg-emerald-500 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-emerald-400" />
-            </div>
           </nav>
         </>
       ) : null}

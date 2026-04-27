@@ -77,16 +77,16 @@ export default function LandingPage() {
               </ul>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a
-                  href="#iletisim"
-                  className="rounded-lg bg-emerald-500 px-5 py-3 font-semibold text-white transition hover:bg-emerald-400"
-                >
-                  WhatsApp ile İletişim
-                </a>
-                <a
                   href="#hizmetler"
                   className="rounded-lg border border-white/20 bg-white/5 px-5 py-3 font-semibold text-white transition hover:bg-white/10"
                 >
                   Hizmetlerimiz
+                </a>
+                <a
+                  href="#iletisim"
+                  className="rounded-lg border border-blue-400/40 bg-blue-500/15 px-5 py-3 font-semibold text-blue-100 transition hover:bg-blue-500/25"
+                >
+                  İletişim
                 </a>
               </div>
             </div>
@@ -132,7 +132,10 @@ export default function LandingPage() {
             >
               <h3 className="text-xl font-semibold">{service.title}</h3>
               <p className="mt-3 text-sm text-slate-600">{service.description}</p>
-              <a href="#iletisim" className="mt-5 inline-block text-sm font-semibold text-blue-600">
+              <a
+                href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
+                className="mt-5 inline-block text-sm font-semibold text-blue-600"
+              >
                 Detaylı Bilgi
               </a>
             </article>
@@ -164,14 +167,6 @@ export default function LandingPage() {
             ))}
           </div>
 
-          <div className="mt-8 flex justify-center">
-            <a
-              href="#iletisim"
-              className="rounded-lg bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:bg-emerald-400"
-            >
-              WhatsApp ile Bağlanın
-            </a>
-          </div>
         </div>
       </section>
 
@@ -199,45 +194,36 @@ export default function LandingPage() {
       </section>
 
       <section id="iletisim" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className="mx-auto max-w-2xl">
           <article>
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               İletişim
             </span>
             <h2 className="mt-5 text-3xl font-bold sm:text-5xl">Hemen İletişime Geçin</h2>
             <p className="mt-4 max-w-xl text-slate-600">
-              TSE uygunluk belgeleri ihtiyaçlarınız için size özel çözümler sunuyoruz.
-              WhatsApp üzerinden bize ulaşın, anında yanıt alalım.
+              TSE uygunluk belgeleri ihtiyaçlarınız için size özel çözümler sunuyoruz. Telefon veya e-posta ile bize
+              ulaşabilirsiniz.
             </p>
 
             <div className="mt-8 space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
               <p>
-                <strong>Telefon:</strong> +90 (212) 123 45 67
+                <strong>Telefon:</strong>{" "}
+                <a href="tel:+902121234567" className="text-blue-600 hover:underline">
+                  +90 (212) 123 45 67
+                </a>
               </p>
               <p>
-                <strong>E-posta:</strong> info@example.com
+                <strong>E-posta:</strong>{" "}
+                <a href="mailto:info@example.com" className="text-blue-600 hover:underline">
+                  info@example.com
+                </a>
               </p>
               <p>
                 <strong>Adres:</strong> Örnek Mahallesi, Teknoloji Cad. No:123, İstanbul
               </p>
             </div>
+            <p className="mt-6 text-center text-sm text-slate-500">Mesai saatleri: Pazartesi - Cuma 09:00 - 18:00</p>
           </article>
-
-          <aside className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl">
-            <h3 className="text-2xl font-bold">WhatsApp ile Hızlı İletişim</h3>
-            <ul className="mt-6 space-y-2 text-slate-600">
-              <li>- Anında yanıt</li>
-              <li>- Ücretsiz danışmanlık</li>
-              <li>- Hızlı fiyat teklifi</li>
-            </ul>
-            <a
-              href="#"
-              className="mt-6 inline-flex w-full items-center justify-center rounded-lg bg-emerald-500 px-5 py-3 font-semibold text-white transition hover:bg-emerald-400"
-            >
-              WhatsApp ile Başla
-            </a>
-            <p className="mt-5 text-center text-sm text-slate-500">Mesai saatleri: Pazartesi - Cuma 09:00 - 18:00</p>
-          </aside>
         </div>
       </section>
 
