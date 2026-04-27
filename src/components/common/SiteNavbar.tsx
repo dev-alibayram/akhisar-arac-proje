@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { createPortal } from "react-dom";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -23,16 +24,24 @@ export function SiteNavbar() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [open]);
+  const mobileOverlay =
+    open &&
+    typeof document !== "undefined" &&
+    createPortal(
+      <button
+        type="button"
+        className="fixed inset-0 z-[100] bg-black/50 lg:hidden"
+        aria-label="Menüyü kapat"
+        onClick={() => setOpen(false)}
+      />,
+      document.body,
+    );
 
   return (
     <header className="relative">
-      <div className="flex items-center justify-between gap-4">
+      <div
+        className={`flex items-center justify-between gap-4 ${open ? "relative z-[120]" : ""}`}
+      >
         <a
           href="#anasayfa"
           className="flex min-w-0 shrink-0 items-center gap-2.5 text-lg font-bold text-white"
@@ -92,15 +101,10 @@ export function SiteNavbar() {
 
       {open ? (
         <>
-          <button
-            type="button"
-            className="fixed inset-0 z-40 bg-black/50 lg:hidden"
-            aria-label="Menüyü kapat"
-            onClick={() => setOpen(false)}
-          />
+          {mobileOverlay}
           <nav
             id="mobile-menu"
-            className="absolute right-0 top-[calc(100%+0.5rem)] z-50 w-[min(18rem,calc(100vw-2rem))] rounded-xl border border-white/10 bg-slate-900/95 p-4 shadow-2xl backdrop-blur-md lg:hidden"
+            className="absolute right-0 top-[calc(100%+0.5rem)] z-[110] w-[min(18rem,calc(100vw-2rem))] rounded-xl border border-white/10 bg-slate-900/95 p-4 shadow-2xl backdrop-blur-md lg:hidden"
             aria-label="Mobil menü"
           >
             <ul className="flex flex-col gap-1">
