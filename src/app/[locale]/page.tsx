@@ -1,3 +1,5 @@
+import { SiteNavbar } from "@/components/common/SiteNavbar";
+
 const services = [
   {
     title: "Tip Onayı Belgeleri",
@@ -43,30 +45,19 @@ const stats = [
 export default function LandingPage() {
   return (
     <main className="text-slate-900">
+      <div className="sticky top-0 z-50 border-b border-white/10 bg-[#071534]/92 backdrop-blur-md">
+        <div className="mx-auto w-full max-w-[1400px] px-4 py-3 sm:px-6 lg:px-10 xl:px-16">
+          <div className="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white backdrop-blur sm:px-6">
+            <SiteNavbar />
+          </div>
+        </div>
+      </div>
+
       <section className="dark-grid">
         <div className="mx-auto max-w-6xl px-4 pb-20 pt-6 sm:px-6 lg:px-8">
-          <header className="rounded-2xl border border-white/10 bg-slate-900/70 px-4 py-3 text-white backdrop-blur sm:px-6">
-            <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
-              <div className="text-lg font-bold">Akhisar Araç Proje</div>
-              <nav className="flex flex-wrap items-center gap-4 text-sm text-slate-200">
-                <a href="#anasayfa">Ana Sayfa</a>
-                <a href="#hizmetler">Hizmetlerimiz</a>
-                <a href="#surec">Süreç</a>
-                <a href="#hakkimizda">Hakkımızda</a>
-                <a href="#iletisim">İletişim</a>
-              </nav>
-              <a
-                href="#iletisim"
-                className="inline-flex items-center justify-center rounded-lg bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition hover:bg-emerald-400"
-              >
-                WhatsApp
-              </a>
-            </div>
-          </header>
-
           <div
             id="anasayfa"
-            className="mt-12 grid gap-10 text-white lg:grid-cols-2 lg:items-center"
+            className="mt-6 grid gap-10 text-white lg:grid-cols-2 lg:items-center lg:mt-10"
           >
             <div>
               <span className="inline-flex rounded-full border border-blue-300/20 bg-blue-500/15 px-3 py-1 text-xs font-medium text-blue-200">
