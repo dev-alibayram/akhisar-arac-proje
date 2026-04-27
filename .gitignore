@@ -14,6 +14,7 @@
 
 # local editor configuration
 .cursorrules
+.cursor/
 
 # debug
 npm-debug.log*
