@@ -53,10 +53,9 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <section className="dark-grid">
-        <div className="mx-auto max-w-6xl px-4 pb-20 pt-6 sm:px-6 lg:px-8">
+      <section id="anasayfa" className="dark-grid scroll-mt-28">
+        <div className="mx-auto flex min-h-[calc(100vh-110px)] max-w-6xl items-center px-4 pb-20 pt-6 sm:px-6 lg:px-8">
           <div
-            id="anasayfa"
             className="mt-6 grid gap-10 text-white lg:grid-cols-2 lg:items-center lg:mt-10"
           >
             <div>
@@ -113,8 +112,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="hizmetler" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center">
+      <section id="hizmetler" className="scroll-mt-28">
+        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
           <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
             Hizmetlerimiz
           </span>
@@ -122,29 +122,30 @@ export default function LandingPage() {
           <p className="mt-4 text-slate-600">
             Motorlu taşıtlarınız için ihtiyaç duyulan tüm TSE uygunluk belgeleri ve projelerini tek noktadan sunuyoruz.
           </p>
-        </div>
+          </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <article
-              key={service.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
-            >
-              <h3 className="text-xl font-semibold">{service.title}</h3>
-              <p className="mt-3 text-sm text-slate-600">{service.description}</p>
-              <a
-                href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
-                className="mt-5 inline-block text-sm font-semibold text-blue-600"
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <article
+                key={service.title}
+                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
               >
-                Detaylı Bilgi
-              </a>
-            </article>
-          ))}
+                <h3 className="text-xl font-semibold">{service.title}</h3>
+                <p className="mt-3 text-sm text-slate-600">{service.description}</p>
+                <a
+                  href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
+                  className="mt-5 inline-block text-sm font-semibold text-blue-600"
+                >
+                  Detaylı Bilgi
+                </a>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
-      <section id="surec" className="bg-slate-50 py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section id="surec" className="scroll-mt-28 bg-slate-50">
+        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               Nasıl Çalışıyoruz
@@ -170,8 +171,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="hakkimizda" className="dark-grid py-20 text-white">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <section id="hakkimizda" className="dark-grid scroll-mt-28 text-white">
+        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="rounded-full border border-blue-300/30 bg-blue-500/15 px-3 py-1 text-xs font-semibold text-blue-200">
               Rakamlarla Biz
@@ -193,8 +194,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim" className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl">
+      <section id="iletisim" className="scroll-mt-28">
+        <div className="mx-auto flex min-h-screen max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl">
           <article>
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               İletişim
@@ -224,6 +226,7 @@ export default function LandingPage() {
             </div>
             <p className="mt-6 text-center text-sm text-slate-500">Mesai saatleri: Pazartesi - Cuma 09:00 - 18:00</p>
           </article>
+          </div>
         </div>
       </section>
 
