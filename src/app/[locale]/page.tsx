@@ -144,6 +144,38 @@ export default function LandingPage() {
         </div>
       </section>
 
+      <section id="ek-hizmetler" className="dark-grid text-white">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <span className="rounded-full border border-blue-300/30 bg-blue-500/15 px-3 py-1 text-xs font-semibold text-blue-200">
+              Ek Hizmetler
+            </span>
+            <h2 className="mt-5 text-3xl font-bold sm:text-5xl">Ek Hizmetler</h2>
+            <p className="mt-4 text-slate-300">
+              Motorlu taşıtlarınız için ihtiyaç duyulan tüm TSE uygunluk belgeleri ve projelerini tek noktadan sunuyoruz.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map((service) => (
+              <article
+                key={`extra-${service.title}`}
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+              >
+                <h3 className="text-xl font-semibold text-white">{service.title}</h3>
+                <p className="mt-3 text-sm text-slate-300">{service.description}</p>
+                <a
+                  href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
+                  className="mt-5 inline-block text-sm font-semibold text-blue-300"
+                >
+                  Detaylı Bilgi
+                </a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="surec" className="bg-slate-50">
         <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
