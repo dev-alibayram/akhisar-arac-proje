@@ -305,7 +305,7 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <div className="py-6 text-center text-sm text-slate-500">
+        <div className="overflow-x-auto whitespace-nowrap border-t border-slate-200/70 py-4 text-center text-xs text-slate-500 sm:text-sm">
           © 2026 Akhisar Araç Proje - Designed by dev.alibayram@gmail.com
         </div>
       </section>
