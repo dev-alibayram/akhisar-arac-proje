@@ -113,7 +113,7 @@ export default function LandingPage() {
       </section>
 
       <section id="hizmetler">
-        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
           <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
             Hizmetlerimiz
@@ -145,7 +145,7 @@ export default function LandingPage() {
       </section>
 
       <section id="surec" className="bg-slate-50">
-        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               Nasıl Çalışıyoruz
@@ -172,7 +172,7 @@ export default function LandingPage() {
       </section>
 
       <section id="hakkimizda" className="dark-grid text-white">
-        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="rounded-full border border-blue-300/30 bg-blue-500/15 px-3 py-1 text-xs font-semibold text-blue-200">
               Rakamlarla Biz
@@ -195,7 +195,7 @@ export default function LandingPage() {
       </section>
 
       <section id="iletisim">
-        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
           <article>
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
