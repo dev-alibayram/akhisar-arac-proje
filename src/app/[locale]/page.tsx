@@ -53,7 +53,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      <section id="anasayfa" className="dark-grid scroll-mt-28">
+      <section id="anasayfa" className="dark-grid">
         <div className="mx-auto flex min-h-[calc(100vh-110px)] max-w-6xl items-center px-4 pb-20 pt-6 sm:px-6 lg:px-8">
           <div
             className="mt-6 grid gap-10 text-white lg:grid-cols-2 lg:items-center lg:mt-10"
@@ -112,8 +112,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="hizmetler" className="scroll-mt-28">
-        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+      <section id="hizmetler">
+        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
           <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
             Hizmetlerimiz
@@ -144,8 +144,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="surec" className="scroll-mt-28 bg-slate-50">
-        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+      <section id="surec" className="bg-slate-50">
+        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               Nasıl Çalışıyoruz
@@ -171,8 +171,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="hakkimizda" className="dark-grid scroll-mt-28 text-white">
-        <div className="mx-auto flex min-h-screen max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+      <section id="hakkimizda" className="dark-grid text-white">
+        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <span className="rounded-full border border-blue-300/30 bg-blue-500/15 px-3 py-1 text-xs font-semibold text-blue-200">
               Rakamlarla Biz
@@ -194,8 +194,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim" className="scroll-mt-28">
-        <div className="mx-auto flex min-h-screen max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
+      <section id="iletisim">
+        <div className="mx-auto flex min-h-[calc(100svh+110px)] max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
           <article>
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
