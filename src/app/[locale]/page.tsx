@@ -226,87 +226,87 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim">
-        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
+      <section id="iletisim" className="py-20">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl">
-          <article>
-            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-              İletişim
-            </span>
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl">Hemen İletişime Geçin</h2>
-            <p className="mt-4 max-w-xl text-slate-600">
-              TSE uygunluk belgeleri ihtiyaçlarınız için size özel çözümler sunuyoruz. Telefon veya e-posta ile bize
-              ulaşabilirsiniz.
-            </p>
+            <article>
+              <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
+                İletişim
+              </span>
+              <h2 className="mt-5 text-3xl font-bold sm:text-5xl">Hemen İletişime Geçin</h2>
+              <p className="mt-4 max-w-xl text-slate-600">
+                TSE uygunluk belgeleri ihtiyaçlarınız için size özel çözümler sunuyoruz. Telefon veya e-posta ile bize
+                ulaşabilirsiniz.
+              </p>
 
-            <div className="mt-8 space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
-              <p>
-                <strong>Telefon:</strong>{" "}
-                <a href="tel:+902121234567" className="text-blue-600 hover:underline">
-                  +90 (212) 123 45 67
-                </a>
-              </p>
-              <p>
-                <strong>E-posta:</strong>{" "}
-                <a href="mailto:info@example.com" className="text-blue-600 hover:underline">
-                  info@example.com
-                </a>
-              </p>
-              <p>
-                <strong>Adres:</strong> Örnek Mahallesi, Teknoloji Cad. No:123, İstanbul
+              <div className="mt-8 space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
+                <p>
+                  <strong>Telefon:</strong>{" "}
+                  <a href="tel:+902121234567" className="text-blue-600 hover:underline">
+                    +90 (212) 123 45 67
+                  </a>
+                </p>
+                <p>
+                  <strong>E-posta:</strong>{" "}
+                  <a href="mailto:info@example.com" className="text-blue-600 hover:underline">
+                    info@example.com
+                  </a>
+                </p>
+                <p>
+                  <strong>Adres:</strong> Örnek Mahallesi, Teknoloji Cad. No:123, İstanbul
+                </p>
+              </div>
+              <p className="mt-6 text-center text-sm text-slate-500">Mesai saatleri: Pazartesi - Cuma 09:00 - 18:00</p>
+            </article>
+          </div>
+        </div>
+
+        <div className="mt-16 bg-slate-950 text-slate-300">
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+            <div>
+              <h3 className="text-xl font-bold text-white">Akhisar Araç Proje</h3>
+              <p className="mt-3 text-sm text-slate-400">
+                Motorlu taşıtlar için TSE uygunluk belgeleri ve projelerinde uzman ekibimizle yanınızdayız.
               </p>
             </div>
-            <p className="mt-6 text-center text-sm text-slate-500">Mesai saatleri: Pazartesi - Cuma 09:00 - 18:00</p>
-          </article>
+            <div>
+              <h4 className="font-semibold text-white">Hızlı Linkler</h4>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li>
+                  <a href="#anasayfa">Ana Sayfa</a>
+                </li>
+                <li>
+                  <a href="#hizmetler">Hizmetlerimiz</a>
+                </li>
+                <li>
+                  <a href="#hakkimizda">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="#iletisim">İletişim</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-white">Hizmetlerimiz</h4>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li>Tip Onayı Belgesi</li>
+                <li>Uygunluk Sertifikası</li>
+                <li>Periyodik Muayene</li>
+                <li>CE Belgesi</li>
+                <li>Teknik Proje</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-white">İletişim</h4>
+              <ul className="mt-4 space-y-2 text-sm">
+                <li>+90 (212) 123 45 67</li>
+                <li>info@example.com</li>
+                <li>Örnek Mahallesi, Teknoloji Cad. No:123, İstanbul</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-
-      <footer className="bg-slate-950 text-slate-300">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
-          <div>
-            <h3 className="text-xl font-bold text-white">Akhisar Araç Proje</h3>
-            <p className="mt-3 text-sm text-slate-400">
-              Motorlu taşıtlar için TSE uygunluk belgeleri ve projelerinde uzman ekibimizle yanınızdayız.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white">Hızlı Linkler</h4>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li>
-                <a href="#anasayfa">Ana Sayfa</a>
-              </li>
-              <li>
-                <a href="#hizmetler">Hizmetlerimiz</a>
-              </li>
-              <li>
-                <a href="#hakkimizda">Hakkımızda</a>
-              </li>
-              <li>
-                <a href="#iletisim">İletişim</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white">Hizmetlerimiz</h4>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li>Tip Onayı Belgesi</li>
-              <li>Uygunluk Sertifikası</li>
-              <li>Periyodik Muayene</li>
-              <li>CE Belgesi</li>
-              <li>Teknik Proje</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white">İletişim</h4>
-            <ul className="mt-4 space-y-2 text-sm">
-              <li>+90 (212) 123 45 67</li>
-              <li>info@example.com</li>
-              <li>Örnek Mahallesi, Teknoloji Cad. No:123, İstanbul</li>
-            </ul>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 }
