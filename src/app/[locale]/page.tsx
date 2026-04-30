@@ -226,9 +226,9 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim" className="py-20">
-        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl">
+      <section id="iletisim">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl items-center px-4 py-20 sm:px-6 lg:px-8">
+          <div className="mx-auto w-full max-w-2xl">
             <article>
               <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
                 İletişim
@@ -305,6 +305,10 @@ export default function LandingPage() {
               </ul>
             </div>
           </div>
+        </div>
+
+        <div className="py-6 text-center text-sm text-slate-500">
+          © 2026 Akhisar Araç Proje - Designed by dev.alibayram@gmail.com
         </div>
       </section>
     </main>
