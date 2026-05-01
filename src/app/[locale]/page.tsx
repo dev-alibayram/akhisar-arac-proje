@@ -260,7 +260,7 @@ export default function LandingPage() {
         </div>
 
         <div className="bg-slate-950 text-slate-300">
-          <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+          <div className="mx-auto grid max-w-6xl gap-10 px-4 py-7 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
             <div>
               <h3 className="text-xl font-bold text-white">Akhisar Araç Proje</h3>
               <p className="mt-3 text-sm text-slate-400">
