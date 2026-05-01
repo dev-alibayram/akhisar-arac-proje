@@ -226,7 +226,7 @@ export default function LandingPage() {
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               İletişim
             </span>
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl">Hemen İletişime Geçin</h2>
+            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:whitespace-nowrap">Hemen İletişime Geçin</h2>
             <p className="mt-4 max-w-xl text-slate-600">
               TSE uygunluk belgeleri ihtiyaçlarınız için size özel çözümler sunuyoruz. Telefon veya e-posta ile bize
               ulaşabilirsiniz.
