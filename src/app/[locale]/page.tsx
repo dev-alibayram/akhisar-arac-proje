@@ -226,8 +226,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim" className="flex flex-col">
-        <div className="mx-auto flex min-h-[calc(100svh+96px)] w-full max-w-6xl items-center px-4 pb-12 pt-20 sm:px-6 lg:px-8">
+      <section id="iletisim" className="flex min-h-[calc(100svh-96px)] flex-col justify-between">
+        <div className="mx-auto flex w-full max-w-6xl items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
           <article className="mx-auto w-full max-w-2xl">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               İletişim
@@ -260,7 +260,7 @@ export default function LandingPage() {
         </div>
 
         <div className="bg-slate-950 text-slate-300">
-          <div className="mx-auto grid max-w-6xl gap-10 px-4 py-7 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 py-5 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
             <div>
               <h3 className="text-xl font-bold text-white">Akhisar Araç Proje</h3>
               <p className="mt-3 text-sm text-slate-400">
@@ -303,7 +303,7 @@ export default function LandingPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-800/90 px-4 py-4 text-center text-xs text-slate-400 sm:text-sm">
+          <div className="border-t border-slate-800/90 px-4 py-2 text-center text-[11px] text-slate-400 sm:text-xs">
             © 2026 Akhisar Araç Proje - Designed by dev.alibayram@gmail.com
           </div>
         </div>
