@@ -226,8 +226,8 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim" className="flex min-h-[calc(100svh+96px)] flex-col">
-        <div className="mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">
+      <section id="iletisim" className="flex flex-col">
+        <div className="mx-auto flex min-h-[calc(100svh+96px)] w-full max-w-6xl items-center px-4 pb-12 pt-20 sm:px-6 lg:px-8">
           <article className="mx-auto w-full max-w-2xl">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
               İletişim
