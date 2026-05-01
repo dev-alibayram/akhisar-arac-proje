@@ -56,54 +56,51 @@ export default function LandingPage() {
       <section id="anasayfa" className="dark-grid">
         <div className="mx-auto flex min-h-[calc(100vh-110px)] max-w-6xl items-center px-4 pb-20 pt-6 sm:px-6 lg:px-8">
           <div
-            className="mt-6 grid gap-10 text-white lg:grid-cols-2 lg:items-center lg:mt-10"
+            className="mt-6 grid gap-12 text-white lg:grid-cols-2 lg:items-center lg:mt-10"
           >
             <div>
-              <span className="inline-flex rounded-full border border-blue-300/20 bg-blue-500/15 px-3 py-1 text-xs font-medium text-blue-200">
-                TSE Onaylı Belgelerde Güvenilir Hizmet
-              </span>
-              <h1 className="mt-4 text-4xl font-extrabold leading-tight sm:text-5xl">
+              <h1 className="mt-4 text-5xl font-extrabold leading-tight sm:text-6xl">
                 Motorlu Taşıtlar İçin <span className="text-blue-400">TSE Uygunluk Belgeleri</span>
               </h1>
-              <p className="mt-5 max-w-xl text-slate-300">
+              <p className="mt-6 max-w-xl text-lg text-slate-300">
                 Araçlarınız için gerekli tüm TSE uygunluk belgelerini ve projelerini profesyonel
                 ekibimizle hızlı ve güvenilir şekilde hazırlıyoruz.
               </p>
-              <ul className="mt-6 space-y-2 text-slate-200">
+              <ul className="mt-7 space-y-3 text-base text-slate-200">
                 <li>- Hızlı ve güvenilir süreç</li>
                 <li>- Uzman kadro ile profesyonel destek</li>
                 <li>- Tam uyumluluk garantisi</li>
               </ul>
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-9 flex flex-wrap gap-4">
                 <a
                   href="#hizmetler"
-                  className="rounded-lg border border-white/20 bg-white/5 px-5 py-3 font-semibold text-white transition hover:bg-white/10"
+                  className="rounded-lg border border-white/20 bg-white/5 px-6 py-3.5 text-lg font-semibold text-white transition hover:bg-white/10"
                 >
                   Hizmetlerimiz
                 </a>
                 <a
                   href="#iletisim"
-                  className="rounded-lg border border-blue-400/40 bg-blue-500/15 px-5 py-3 font-semibold text-blue-100 transition hover:bg-blue-500/25"
+                  className="rounded-lg border border-blue-400/40 bg-blue-500/15 px-6 py-3.5 text-lg font-semibold text-blue-100 transition hover:bg-blue-500/25"
                 >
                   İletişim
                 </a>
               </div>
             </div>
 
-            <div className="rounded-2xl border border-white/10 bg-white/5 p-4 shadow-2xl">
-              <div className="grid gap-3 sm:grid-cols-2">
-                <article className="rounded-xl bg-white/10 p-5">
-                  <p className="text-3xl font-bold text-blue-300">500+</p>
-                  <p className="mt-1 text-sm text-slate-200">Tamamlanan Proje</p>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5 shadow-2xl">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <article className="rounded-xl bg-white/10 p-6">
+                  <p className="text-4xl font-bold text-blue-300">500+</p>
+                  <p className="mt-1 text-base text-slate-200">Tamamlanan Proje</p>
                 </article>
-                <article className="rounded-xl bg-white/10 p-5">
-                  <p className="text-3xl font-bold text-blue-300">%98</p>
-                  <p className="mt-1 text-sm text-slate-200">Müşteri Memnuniyeti</p>
+                <article className="rounded-xl bg-white/10 p-6">
+                  <p className="text-4xl font-bold text-blue-300">%98</p>
+                  <p className="mt-1 text-base text-slate-200">Müşteri Memnuniyeti</p>
                 </article>
               </div>
-              <article className="mt-3 rounded-xl bg-white/10 p-5">
-                <p className="text-sm text-slate-100">TSE Sertifikalı Onaylı Belgeler</p>
-                <div className="mt-4 h-2 rounded-full bg-slate-700">
+              <article className="mt-4 rounded-xl bg-white/10 p-6">
+                <p className="text-base text-slate-100">TSE Sertifikalı Onaylı Belgeler</p>
+                <div className="mt-5 h-2.5 rounded-full bg-slate-700">
                   <div className="h-full w-11/12 rounded-full bg-blue-400" />
                 </div>
               </article>
