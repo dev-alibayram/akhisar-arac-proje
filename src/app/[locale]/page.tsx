@@ -226,7 +226,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      <section id="iletisim" className="flex min-h-[calc(100svh+96px)] flex-col justify-between">
+      <section id="iletisim" className="flex min-h-[calc(100svh+96px)] flex-col">
         <div className="mx-auto w-full max-w-6xl px-4 pb-12 pt-20 sm:px-6 lg:px-8">
           <article className="mx-auto w-full max-w-2xl">
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
@@ -303,10 +303,9 @@ export default function LandingPage() {
               </ul>
             </div>
           </div>
-        </div>
-
-        <div className="overflow-x-auto whitespace-nowrap border-t border-slate-200/70 py-4 text-center text-xs text-slate-500 sm:text-sm">
-          © 2026 Akhisar Araç Proje - Designed by dev.alibayram@gmail.com
+          <div className="border-t border-slate-800/90 px-4 py-4 text-center text-xs text-slate-400 sm:text-sm">
+            © 2026 Akhisar Araç Proje - Designed by dev.alibayram@gmail.com
+          </div>
         </div>
       </section>
     </main>
