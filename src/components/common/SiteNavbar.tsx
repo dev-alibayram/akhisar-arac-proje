@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { createPortal } from "react-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const links = [
   { href: "#anasayfa", label: "Ana Sayfa" },
@@ -15,6 +14,8 @@ const links = [
 
 export function SiteNavbar() {
   const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLElement | null>(null);
+  const toggleButtonRef = useRef<HTMLButtonElement | null>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -25,18 +26,28 @@ export function SiteNavbar() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  const mobileOverlay =
-    open &&
-    typeof document !== "undefined" &&
-    createPortal(
-      <button
-        type="button"
-        className="fixed inset-0 z-[100] bg-black/50 lg:hidden"
-        aria-label="Menüyü kapat"
-        onClick={() => setOpen(false)}
-      />,
-      document.body,
-    );
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node | null;
+      if (!target) return;
+
+      const clickedMenu = menuRef.current?.contains(target);
+      const clickedToggle = toggleButtonRef.current?.contains(target);
+      if (!clickedMenu && !clickedToggle) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+    };
+  }, [open]);
 
   return (
     <header className="relative">
@@ -71,6 +82,7 @@ export function SiteNavbar() {
         </nav>
 
         <button
+          ref={toggleButtonRef}
           type="button"
           className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-white/15 bg-white/5 text-white transition hover:bg-white/10 lg:hidden"
           aria-expanded={open}
@@ -101,9 +113,8 @@ export function SiteNavbar() {
       </div>
 
       {open ? (
-        <>
-          {mobileOverlay}
           <nav
+            ref={menuRef}
             id="mobile-menu"
             className="absolute right-0 top-[calc(100%+0.5rem)] z-[110] w-[min(18rem,calc(100vw-2rem))] rounded-xl border border-white/10 bg-slate-900/95 p-4 shadow-2xl backdrop-blur-md lg:hidden"
             aria-label="Mobil menü"
@@ -122,7 +133,6 @@ export function SiteNavbar() {
               ))}
             </ul>
           </nav>
-        </>
       ) : null}
     </header>
   );
