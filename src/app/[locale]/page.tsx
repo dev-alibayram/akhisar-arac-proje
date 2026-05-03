@@ -142,8 +142,8 @@ export default function LandingPage() {
 
       <section id="hizmetler">
         <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-5xl text-center">
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
+          <div className="w-full text-center">
+            <h2 className="mt-5 w-full text-center text-3xl font-bold sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
               Kapsamlı TSE Belgelendirme Çözümleri
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-slate-600 lg:mt-5 lg:text-lg">
