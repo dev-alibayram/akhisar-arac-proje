@@ -3,12 +3,17 @@
 import { useEffect, useId, useState } from "react";
 import { createPortal } from "react-dom";
 import type { ServiceItem } from "@/content/services";
-import { services } from "@/content/services";
+import { services as defaultServices } from "@/content/services";
 
 const cardClassName =
   "box-border flex h-[min(300px,calc(100vw-2rem))] w-[min(300px,calc(100vw-2rem))] shrink-0 cursor-pointer flex-col rounded-2xl border border-white/10 bg-white/5 p-4 text-left shadow-sm transition hover:-translate-y-1 hover:border-white/20 hover:shadow-lg focus-visible:outline focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#071534] sm:h-[300px] sm:w-[300px] sm:p-5";
 
-export function ServiceCardsWithModal() {
+type ServiceCardsWithModalProps = {
+  items?: ServiceItem[];
+  reactKeyPrefix?: string;
+};
+
+export function ServiceCardsWithModal({ items = defaultServices, reactKeyPrefix = "" }: ServiceCardsWithModalProps) {
   const [open, setOpen] = useState<ServiceItem | null>(null);
   const titleId = useId();
 
@@ -61,9 +66,9 @@ export function ServiceCardsWithModal() {
   return (
     <>
       <div className="mt-12 flex w-full flex-wrap justify-center gap-5 sm:gap-6 lg:mt-16">
-        {services.map((service) => (
+        {items.map((service) => (
           <button
-            key={service.title}
+            key={reactKeyPrefix ? `${reactKeyPrefix}-${service.title}` : service.title}
             type="button"
             className={cardClassName}
             onClick={() => setOpen(service)}

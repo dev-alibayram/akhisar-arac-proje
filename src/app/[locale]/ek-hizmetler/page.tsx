@@ -1,10 +1,10 @@
-import { services } from "@/content/services";
+import { ServiceCardsWithModal } from "@/components/services/ServiceCardsWithModal";
 
 export default function EkHizmetlerPage() {
   return (
-    <main className="text-white">
-      <section className="dark-grid">
-        <div className="mx-auto flex min-h-[calc(100svh-96px)] max-w-6xl flex-col justify-start px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pb-24 lg:pt-10">
+    <main className="min-w-0 w-full text-white">
+      <section className="dark-grid w-full">
+        <div className="mx-auto flex min-h-[calc(100svh-96px)] w-full min-w-0 max-w-6xl flex-col justify-start px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pb-24 lg:pt-10">
           <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
             <h1 className="text-3xl font-bold sm:text-5xl lg:text-6xl">Ek Hizmetler</h1>
             <p className="mt-4 text-slate-300 lg:mt-5 lg:text-xl lg:leading-relaxed">
@@ -13,17 +13,7 @@ export default function EkHizmetlerPage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-7">
-            {services.map((service) => (
-              <article
-                key={`extra-${service.title}`}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg lg:p-8"
-              >
-                <h2 className="text-xl font-semibold text-white lg:text-2xl">{service.title}</h2>
-                <p className="mt-3 text-sm text-slate-300 lg:mt-4 lg:text-base">{service.description}</p>
-              </article>
-            ))}
-          </div>
+          <ServiceCardsWithModal reactKeyPrefix="ek" />
         </div>
       </section>
     </main>

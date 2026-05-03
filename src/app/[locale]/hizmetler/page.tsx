@@ -1,4 +1,4 @@
-import { ServiceCardsWithModal } from "@/components/hizmetler/ServiceCardsWithModal";
+import { ServiceCardsWithModal } from "@/components/services/ServiceCardsWithModal";
 
 export default function HizmetlerPage() {
   return (
