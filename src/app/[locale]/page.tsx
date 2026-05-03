@@ -146,13 +146,13 @@ export default function LandingPage() {
             <h2 className="mt-5 w-full text-center text-3xl font-bold sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
               Kapsamlı TSE Belgelendirme Çözümleri
             </h2>
-            <p className="mx-auto mt-4 max-w-2xl text-slate-600 lg:mt-5 lg:text-lg">
+            <p className="mx-auto mt-4 max-w-2xl text-slate-600 lg:mt-5 lg:text-xl lg:leading-relaxed">
               Motorlu taşıtlarınız için ihtiyaç duyulan tüm TSE uygunluk
               belgeleri ve projelerini tek noktadan sunuyoruz.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-14 lg:gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-7">
             {services.map((service) => (
               <article
                 key={service.title}
@@ -243,29 +243,26 @@ export default function LandingPage() {
 
       <section id="hakkimizda" className="dark-grid text-white">
         <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="rounded-full border border-blue-300/30 bg-blue-500/15 px-3 py-1 text-xs font-semibold text-blue-200">
-              Rakamlarla Biz
-            </span>
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl">
+          <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
+            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl">
               Güvenilir ve Deneyimli Ekip
             </h2>
-            <p className="mt-4 text-slate-300">
+            <p className="mt-4 text-slate-300 lg:mt-5 lg:text-xl lg:leading-relaxed">
               Yıllardır sektörde edindiğimiz tecrübe ve başarılarımızla
               yanınızdayız.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-7">
             {stats.map((stat) => (
               <article
                 key={stat.label}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center lg:p-8"
               >
-                <p className="text-4xl font-extrabold text-blue-400">
+                <p className="text-4xl font-extrabold text-blue-400 lg:text-5xl">
                   {stat.value}
                 </p>
-                <p className="mt-2 font-semibold text-slate-100">
+                <p className="mt-2 font-semibold text-slate-100 lg:mt-3 lg:text-lg">
                   {stat.label}
                 </p>
               </article>
