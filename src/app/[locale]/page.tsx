@@ -275,20 +275,17 @@ export default function LandingPage() {
         id="iletisim"
         className="flex min-h-[calc(100svh-96px)] flex-col justify-between"
       >
-        <div className="mx-auto flex w-full max-w-6xl items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
-          <article className="mx-auto w-full max-w-2xl">
-            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-              İletişim
-            </span>
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:whitespace-nowrap">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
+          <article className="w-full max-w-2xl text-center lg:max-w-3xl">
+            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
               Hemen İletişime Geçin
             </h2>
-            <p className="mt-4 max-w-xl text-slate-600">
+            <p className="mx-auto mt-4 max-w-xl text-slate-600 lg:mt-5 lg:max-w-2xl lg:text-xl lg:leading-relaxed">
               TSE uygunluk belgeleri ihtiyaçlarınız için size özel çözümler
               sunuyoruz. Telefon veya e-posta ile bize ulaşabilirsiniz.
             </p>
 
-            <div className="mt-8 space-y-4 rounded-2xl border border-slate-200 bg-white p-6">
+            <div className="mx-auto mt-8 max-w-xl space-y-4 rounded-2xl border border-slate-200 bg-white p-6 text-center lg:mt-10 lg:max-w-2xl lg:p-8 lg:text-lg">
               <p>
                 <strong>Telefon:</strong>{" "}
                 <a
@@ -312,26 +309,26 @@ export default function LandingPage() {
                 İstanbul
               </p>
             </div>
-            <p className="mt-6 text-center text-sm text-slate-500">
+            <p className="mt-6 text-sm text-slate-500 lg:mt-8 lg:text-base">
               Mesai saatleri: Pazartesi - Cuma 09:00 - 18:00
             </p>
           </article>
         </div>
 
         <div className="bg-slate-950 text-slate-300">
-          <div className="mx-auto grid max-w-6xl gap-8 px-4 py-5 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+          <div className="mx-auto grid max-w-6xl gap-8 px-4 py-5 text-center sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:gap-10 lg:px-8 lg:py-7">
             <div>
-              <h3 className="text-xl font-bold text-white">
+              <h3 className="text-xl font-bold text-white lg:text-2xl">
                 Akhisar Araç Proje
               </h3>
-              <p className="mt-3 text-sm text-slate-400">
+              <p className="mt-3 text-sm text-slate-400 lg:text-base">
                 Motorlu taşıtlar için TSE uygunluk belgeleri ve projelerinde
                 uzman ekibimizle yanınızdayız.
               </p>
             </div>
             <div>
-              <h4 className="font-semibold text-white">Hızlı Linkler</h4>
-              <ul className="mt-4 space-y-2 text-sm">
+              <h4 className="font-semibold text-white lg:text-lg">Hızlı Linkler</h4>
+              <ul className="mt-4 space-y-2 text-sm lg:text-base">
                 <li>
                   <a href="#anasayfa">Ana Sayfa</a>
                 </li>
@@ -347,8 +344,8 @@ export default function LandingPage() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-white">Hizmetlerimiz</h4>
-              <ul className="mt-4 space-y-2 text-sm">
+              <h4 className="font-semibold text-white lg:text-lg">Hizmetlerimiz</h4>
+              <ul className="mt-4 space-y-2 text-sm lg:text-base">
                 <li>Tip Onayı Belgesi</li>
                 <li>Uygunluk Sertifikası</li>
                 <li>Periyodik Muayene</li>
@@ -357,15 +354,15 @@ export default function LandingPage() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold text-white">İletişim</h4>
-              <ul className="mt-4 space-y-2 text-sm">
+              <h4 className="font-semibold text-white lg:text-lg">İletişim</h4>
+              <ul className="mt-4 space-y-2 text-sm lg:text-base">
                 <li>+90 (212) 123 45 67</li>
                 <li>info@example.com</li>
                 <li>Örnek Mahallesi, Teknoloji Cad. No:123, İstanbul</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-800/90 px-4 py-2 text-center text-[11px] text-slate-400 sm:text-xs">
+          <div className="border-t border-slate-800/90 px-4 py-2 text-center text-[11px] text-slate-400 sm:text-xs lg:text-sm">
             © 2026 Akhisar Araç Proje - Designed by dev.alibayram@gmail.com
           </div>
         </div>
