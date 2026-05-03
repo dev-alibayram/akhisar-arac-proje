@@ -81,7 +81,7 @@ export function SiteNavbar({ locale }: SiteNavbarProps) {
         </Link>
 
         <nav
-          className="hidden flex-1 items-center justify-center gap-8 text-sm font-medium text-slate-200 lg:flex"
+          className="hidden flex-1 items-center justify-end gap-6 pr-1 text-sm font-medium text-slate-200 lg:flex lg:gap-8 lg:pr-2"
           aria-label="Ana menü"
         >
           {links.map((item) => (
