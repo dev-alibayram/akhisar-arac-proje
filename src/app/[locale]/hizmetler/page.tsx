@@ -29,12 +29,6 @@ export default function HizmetlerPage() {
                 <p className="mt-2 min-h-0 flex-1 overflow-y-auto text-xs leading-snug text-slate-300 sm:mt-3 sm:text-sm">
                   {service.description}
                 </p>
-                <a
-                  href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
-                  className="mt-3 shrink-0 text-sm font-semibold text-blue-300 sm:mt-auto"
-                >
-                  Detaylı Bilgi
-                </a>
               </article>
             ))}
           </div>

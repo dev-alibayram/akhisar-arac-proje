@@ -21,12 +21,6 @@ export default function EkHizmetlerPage() {
               >
                 <h2 className="text-xl font-semibold text-white lg:text-2xl">{service.title}</h2>
                 <p className="mt-3 text-sm text-slate-300 lg:mt-4 lg:text-base">{service.description}</p>
-                <a
-                  href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
-                  className="mt-5 inline-block text-sm font-semibold text-blue-300 lg:mt-6 lg:text-base"
-                >
-                  Detaylı Bilgi
-                </a>
               </article>
             ))}
           </div>
