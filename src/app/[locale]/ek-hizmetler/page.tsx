@@ -3,10 +3,10 @@ import { services } from "@/content/services";
 export default function EkHizmetlerPage() {
   return (
     <main className="text-white">
-      <section className="dark-grid min-h-[calc(100svh+96px)]">
-        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
+      <section className="dark-grid">
+        <div className="mx-auto flex min-h-[calc(100svh-96px)] max-w-6xl flex-col justify-start px-4 pb-20 pt-8 sm:px-6 lg:px-8 lg:pb-24 lg:pt-10">
           <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
-            <h1 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl">Ek Hizmetler</h1>
+            <h1 className="text-3xl font-bold sm:text-5xl lg:text-6xl">Ek Hizmetler</h1>
             <p className="mt-4 text-slate-300 lg:mt-5 lg:text-xl lg:leading-relaxed">
               Motorlu taşıtlarınız için ihtiyaç duyulan tüm TSE uygunluk belgeleri ve projelerini tek
               noktadan sunuyoruz.
