@@ -95,49 +95,55 @@ export default async function LandingPage({ params }: LandingPageProps) {
         </div>
       </section>
 
-      <section id="surec" className="bg-slate-50">
-        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl">Basit ve Hızlı Süreç</h2>
-            <p className="mt-4 text-slate-600 lg:mt-5 lg:text-xl lg:leading-relaxed">
+      <section
+        id="surec"
+        className="flex min-h-[calc(100svh+96px)] flex-col items-center justify-center bg-slate-50 px-4 py-16 sm:px-6 lg:min-h-[calc(100svh-5.5rem)] lg:px-14 lg:py-24"
+      >
+        <div className="mx-auto w-full max-w-6xl">
+          <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
+            <h2 className="text-3xl font-bold sm:text-5xl lg:text-7xl">Basit ve Hızlı Süreç</h2>
+            <p className="mt-4 text-slate-600 lg:mt-6 lg:text-2xl lg:leading-relaxed">
               4 adımda TSE uygunluk belgelerinize sahip olun. Her aşamada yanınızdayız.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-7">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-10">
             {steps.map((step) => (
               <article
                 key={step.id}
-                className="rounded-2xl border border-slate-200 bg-white p-5 lg:p-8"
+                className="rounded-2xl border border-slate-200 bg-white p-5 lg:p-10"
               >
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white lg:h-12 lg:w-12 lg:text-base">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white lg:h-14 lg:w-14 lg:text-lg">
                   {step.id}
                 </span>
-                <h3 className="mt-4 text-xl font-semibold lg:mt-5 lg:text-2xl">{step.title}</h3>
-                <p className="mt-3 text-sm text-slate-600 lg:mt-4 lg:text-base">{step.text}</p>
+                <h3 className="mt-4 text-xl font-semibold lg:mt-6 lg:text-3xl">{step.title}</h3>
+                <p className="mt-3 text-sm text-slate-600 lg:mt-5 lg:text-lg">{step.text}</p>
               </article>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="hakkimizda" className="dark-grid text-white">
-        <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl">Güvenilir ve Deneyimli Ekip</h2>
-            <p className="mt-4 text-slate-300 lg:mt-5 lg:text-xl lg:leading-relaxed">
+      <section
+        id="hakkimizda"
+        className="dark-grid flex min-h-[calc(100svh+96px)] flex-col items-center justify-center px-4 py-16 text-white sm:px-6 lg:min-h-[calc(100svh-5.5rem)] lg:px-14 lg:py-24"
+      >
+        <div className="mx-auto w-full max-w-6xl">
+          <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
+            <h2 className="text-3xl font-bold sm:text-5xl lg:text-7xl">Güvenilir ve Deneyimli Ekip</h2>
+            <p className="mt-4 text-slate-300 lg:mt-6 lg:text-2xl lg:leading-relaxed">
               Yıllardır sektörde edindiğimiz tecrübe ve başarılarımızla yanınızdayız.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-7">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-10">
             {stats.map((stat) => (
               <article
                 key={stat.label}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center lg:p-8"
+                className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center lg:p-10"
               >
-                <p className="text-4xl font-extrabold text-blue-400 lg:text-5xl">{stat.value}</p>
-                <p className="mt-2 font-semibold text-slate-100 lg:mt-3 lg:text-lg">{stat.label}</p>
+                <p className="text-4xl font-extrabold text-blue-400 lg:text-7xl">{stat.value}</p>
+                <p className="mt-2 font-semibold text-slate-100 lg:mt-4 lg:text-xl">{stat.label}</p>
               </article>
             ))}
           </div>
