@@ -17,17 +17,26 @@ export default function HizmetlerPage() {
             </p>
           </div>
 
-          <div className="mt-12 grid w-full gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3 lg:gap-7">
-            {services.map((service) => (
+          <div className="mt-12 grid w-full grid-cols-1 gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-6">
+            {services.map((service, index) => (
               <article
                 key={service.title}
-                className="rounded-2xl border border-white/10 bg-white/5 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg lg:p-8"
+                className={[
+                  "flex min-h-0 flex-col rounded-2xl border border-white/10 bg-white/5 p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:p-5",
+                  "lg:aspect-square lg:p-5",
+                  index === 4 ? "lg:col-start-2 lg:row-start-2" : "",
+                  index === 5 ? "lg:col-start-3 lg:row-start-2" : "",
+                ].join(" ")}
               >
-                <h2 className="text-xl font-semibold text-white lg:text-2xl">{service.title}</h2>
-                <p className="mt-3 text-sm text-slate-300 lg:mt-4 lg:text-base">{service.description}</p>
+                <h2 className="line-clamp-2 shrink-0 text-lg font-semibold text-white sm:text-xl lg:text-lg">
+                  {service.title}
+                </h2>
+                <p className="mt-2 min-h-0 flex-1 overflow-y-auto text-xs leading-snug text-slate-300 sm:text-sm lg:mt-3 lg:text-sm">
+                  {service.description}
+                </p>
                 <a
                   href="mailto:info@example.com?subject=Hizmet%20hakkında%20bilgi"
-                  className="mt-5 inline-block text-sm font-semibold text-blue-300 lg:mt-6 lg:text-base"
+                  className="mt-3 shrink-0 text-sm font-semibold text-blue-300 lg:mt-auto lg:text-sm"
                 >
                   Detaylı Bilgi
                 </a>
