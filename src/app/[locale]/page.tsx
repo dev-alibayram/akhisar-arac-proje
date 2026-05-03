@@ -146,11 +146,11 @@ export default async function LandingPage({ params }: LandingPageProps) {
 
       <section
         id="iletisim"
-        className="flex min-h-[calc(100svh-96px)] flex-col justify-between bg-[#f8fafc]"
+        className="scroll-mt-28 bg-[#f8fafc] pb-12 pt-20 sm:scroll-mt-32 sm:pb-14 sm:pt-24 lg:pt-28"
       >
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-center px-4 pb-6 pt-8 sm:px-6 lg:px-8">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center px-4 sm:px-6 lg:px-8">
           <article className="w-full max-w-2xl text-center lg:max-w-3xl">
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
+            <h2 className="text-3xl font-bold sm:text-5xl lg:text-6xl lg:whitespace-nowrap">
               Hemen İletişime Geçin
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-slate-600 lg:mt-5 lg:max-w-2xl lg:text-xl lg:leading-relaxed">
