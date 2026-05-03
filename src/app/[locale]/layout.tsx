@@ -1,3 +1,4 @@
+import { ScrollToHashOnNavigate } from "@/components/common/ScrollToHashOnNavigate";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 
@@ -12,6 +13,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <>
       <SiteHeader locale={locale} />
+      <ScrollToHashOnNavigate />
       {children}
       <SiteFooter locale={locale} />
     </>

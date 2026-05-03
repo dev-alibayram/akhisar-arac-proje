@@ -40,7 +40,7 @@ export default async function LandingPage({ params }: LandingPageProps) {
 
   return (
     <main className="text-slate-900">
-      <section id="anasayfa" className="dark-grid">
+      <section id="anasayfa" className="scroll-mt-28 dark-grid sm:scroll-mt-32">
         <div className="mx-auto flex min-h-[calc(100vh-110px)] max-w-6xl items-center px-4 pb-20 pt-6 sm:px-6 lg:px-8">
           <div className="mt-6 grid gap-10 text-white lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-12">
             <div>
@@ -97,7 +97,7 @@ export default async function LandingPage({ params }: LandingPageProps) {
 
       <section
         id="surec"
-        className="flex min-h-[calc(100svh+96px)] flex-col items-center justify-center bg-slate-50 px-4 py-16 sm:px-6 lg:min-h-[calc(100svh-5.5rem)] lg:px-14 lg:py-24"
+        className="flex min-h-[calc(100svh+96px)] scroll-mt-28 flex-col items-center justify-center bg-slate-50 px-4 py-16 sm:scroll-mt-32 sm:px-6 lg:min-h-[calc(100svh-5.5rem)] lg:px-14 lg:py-24"
       >
         <div className="mx-auto w-full max-w-6xl">
           <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
@@ -126,7 +126,7 @@ export default async function LandingPage({ params }: LandingPageProps) {
 
       <section
         id="hakkimizda"
-        className="dark-grid flex min-h-[calc(100svh+96px)] flex-col items-center justify-center px-4 py-16 text-white sm:px-6 lg:min-h-[calc(100svh-5.5rem)] lg:px-14 lg:py-24"
+        className="dark-grid flex min-h-[calc(100svh+96px)] scroll-mt-28 flex-col items-center justify-center px-4 py-16 text-white sm:scroll-mt-32 sm:px-6 lg:min-h-[calc(100svh-5.5rem)] lg:px-14 lg:py-24"
       >
         <div className="mx-auto w-full max-w-6xl">
           <div className="mx-auto max-w-2xl text-center lg:max-w-4xl">
