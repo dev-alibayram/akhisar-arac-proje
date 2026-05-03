@@ -66,7 +66,7 @@ export function SiteNavbar({ locale }: SiteNavbarProps) {
       >
         <Link
           href={`${base}#anasayfa`}
-          className="flex min-w-0 shrink-0 items-center gap-2.5 text-lg font-bold text-white"
+          className="flex min-w-0 shrink-0 items-center gap-2.5 text-xl font-bold text-white sm:text-2xl"
         >
           <Image
             src="/logo.png"
@@ -77,7 +77,7 @@ export function SiteNavbar({ locale }: SiteNavbarProps) {
             sizes="40px"
             priority
           />
-          <span className="truncate sm:whitespace-normal">Akhisar Araç Proje</span>
+          <span className="ml-[3ch] truncate sm:whitespace-normal">Akhisar Araç Proje</span>
         </Link>
 
         <nav
