@@ -1,4 +1,4 @@
-import { services } from "@/content/services";
+import { ServiceCardsWithModal } from "@/components/hizmetler/ServiceCardsWithModal";
 
 export default function HizmetlerPage() {
   return (
@@ -17,21 +17,7 @@ export default function HizmetlerPage() {
             </p>
           </div>
 
-          <div className="mt-12 flex w-full flex-wrap justify-center gap-5 sm:gap-6 lg:mt-16">
-            {services.map((service) => (
-              <article
-                key={service.title}
-                className="box-border flex h-[min(300px,calc(100vw-2rem))] w-[min(300px,calc(100vw-2rem))] shrink-0 flex-col rounded-2xl border border-white/10 bg-white/5 p-4 shadow-sm transition hover:-translate-y-1 hover:shadow-lg sm:h-[300px] sm:w-[300px] sm:p-5"
-              >
-                <h2 className="line-clamp-2 shrink-0 text-lg font-semibold text-white sm:text-xl">
-                  {service.title}
-                </h2>
-                <p className="mt-2 min-h-0 flex-1 overflow-y-auto text-xs leading-snug text-slate-300 sm:mt-3 sm:text-sm">
-                  {service.description}
-                </p>
-              </article>
-            ))}
-          </div>
+          <ServiceCardsWithModal />
         </div>
       </section>
     </main>
