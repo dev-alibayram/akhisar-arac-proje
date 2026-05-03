@@ -214,30 +214,27 @@ export default function LandingPage() {
 
       <section id="surec" className="bg-slate-50">
         <div className="mx-auto flex min-h-[calc(100svh+96px)] max-w-6xl flex-col justify-center px-4 py-20 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-semibold text-blue-700">
-              Nasıl Çalışıyoruz
-            </span>
-            <h2 className="mt-5 text-3xl font-bold sm:text-5xl">
+          <div className="mx-auto max-w-2xl text-center lg:max-w-3xl">
+            <h2 className="mt-5 text-3xl font-bold sm:text-5xl lg:text-6xl">
               Basit ve Hızlı Süreç
             </h2>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-4 text-slate-600 lg:mt-5 lg:text-xl lg:leading-relaxed">
               4 adımda TSE uygunluk belgelerinize sahip olun. Her aşamada
               yanınızdayız.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:mt-16 lg:grid-cols-4 lg:gap-7">
             {steps.map((step) => (
               <article
                 key={step.id}
-                className="rounded-2xl border border-slate-200 bg-white p-5"
+                className="rounded-2xl border border-slate-200 bg-white p-5 lg:p-8"
               >
-                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white">
+                <span className="inline-flex h-9 w-9 items-center justify-center rounded-full bg-blue-600 text-sm font-bold text-white lg:h-12 lg:w-12 lg:text-base">
                   {step.id}
                 </span>
-                <h3 className="mt-4 text-xl font-semibold">{step.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{step.text}</p>
+                <h3 className="mt-4 text-xl font-semibold lg:mt-5 lg:text-2xl">{step.title}</h3>
+                <p className="mt-3 text-sm text-slate-600 lg:mt-4 lg:text-base">{step.text}</p>
               </article>
             ))}
           </div>
